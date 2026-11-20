@@ -1,0 +1,252 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --text: #22201c;
+  --muted: #6b665d;
+  --line: #e2ddd3;
+  --accent: #b4472e;
+  --accent-soft: #edc9bd;
+  --accent-text: #ffffff;
+  --ok: #2e7d4f;
+  --ok-bg: #e3f2e8;
+  --bad: #b3312b;
+  --bad-bg: #f9e3e1;
+  --radius: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191816;
+    --surface: #24221f;
+    --text: #eeeae2;
+    --muted: #a39d91;
+    --line: #38352f;
+    --accent: #e0714f;
+    --accent-soft: #6b3a2b;
+    --accent-text: #1b1210;
+    --ok: #6cc08b;
+    --ok-bg: #1e3327;
+    --bad: #ef8a80;
+    --bad-bg: #3d2220;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: calc(20px + env(safe-area-inset-top)) 16px calc(96px + env(safe-area-inset-bottom));
+}
+
+h1 { font-size: 1.5rem; line-height: 1.2; margin: 0 0 4px; }
+h1 + section { margin-top: 16px; }
+h2 { font-size: 1.1rem; margin: 28px 0 10px; }
+p { margin: 0 0 12px; }
+
+.muted { color: var(--muted); }
+.small { font-size: 0.875rem; }
+.error { color: var(--bad); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+}
+.card > :last-child { margin-bottom: 0; }
+
+/* ---------- Buttons ---------- */
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  font-weight: 600;
+  text-align: center;
+}
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+.btn.inline {
+  display: inline-block;
+  width: auto;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+.btn.danger { color: var(--bad); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+
+.link {
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.btn + p { margin-top: 10px; }
+
+.actions { display: grid; gap: 10px; margin-top: 16px; }
+.actions.two { grid-template-columns: 1fr 1fr; }
+.actions.two .btn { padding-left: 8px; padding-right: 8px; }
+
+/* ---------- Tab-Leiste ---------- */
+
+.tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.tabbar[hidden] { display: none; }
+.tabbar button {
+  flex: 1;
+  padding: 14px 4px;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.tabbar button[aria-current="page"] { color: var(--accent); }
+
+/* ---------- Startbildschirm ---------- */
+
+.streak { display: flex; align-items: center; gap: 14px; }
+.streak-count {
+  min-width: 56px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: var(--accent);
+}
+.streak p { margin: 0; }
+
+.cats { list-style: none; margin: 0; padding: 0; }
+.cat-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.cat-name { font-weight: 600; }
+.cat-count { color: var(--muted); font-size: 0.875rem; white-space: nowrap; }
+.cat-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.cat-foot p { margin: 0; }
+.cat-foot .btn { flex-shrink: 0; }
+.cat.locked { opacity: 0.6; }
+
+.bar {
+  position: relative;
+  height: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background: var(--line);
+  overflow: hidden;
+}
+.bar-fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px;
+}
+.bar-learned { background: var(--accent-soft); }
+.bar-solid { background: var(--accent); }
+
+/* ---------- Übungs-Session ---------- */
+
+.session-head { display: flex; align-items: center; justify-content: space-between; }
+.session-head .muted { font-size: 0.875rem; }
+
+.label {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.prompt { font-size: 1.5rem; font-weight: 600; line-height: 1.3; margin-bottom: 20px; }
+.hint { color: var(--muted); }
+.blank { color: var(--accent); letter-spacing: 0.1em; }
+.fill { color: var(--accent); }
+
+.options { display: grid; gap: 10px; }
+.option { text-align: left; font-weight: 500; }
+.option.correct { border-color: var(--ok); background: var(--ok-bg); color: var(--ok); }
+.option.wrong { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+.option:disabled { opacity: 1; }
+
+.answer-input {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+.answer-input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.result { padding: 10px 14px; border-radius: 10px; font-weight: 600; }
+.options + .result { margin-top: 16px; }
+.result.ok { background: var(--ok-bg); color: var(--ok); }
+.result.bad { background: var(--bad-bg); color: var(--bad); }
+
+.solution { font-size: 1.2rem; font-weight: 600; }
+.divider { border: 0; border-top: 1px solid var(--line); margin: 16px 0; }
+
+.mistakes { margin: 0; padding-left: 20px; }
+.mistakes li { margin-bottom: 8px; }
+
+/* ---------- Grammatik ---------- */
+
+.topic-list { list-style: none; margin: 0; padding: 0; }
+.topic-list h2 { margin-top: 0; }
+
+.table-wrap { overflow-x: auto; margin-bottom: 12px; }
+table { border-collapse: collapse; width: 100%; font-size: 0.875rem; }
+th, td { padding: 6px 10px 6px 0; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+th { color: var(--muted); font-weight: 600; }
+td:first-child { font-weight: 600; }
+
+/* ---------- Einstellungen ---------- */
+
+select {
+  display: block;
+  width: 100%;
+  margin: 8px 0 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}

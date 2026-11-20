@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "variant": "es-LatAm",
+    "note": "Lateinamerikanisches Spanisch: 'ustedes' statt 'vosotros'. In 'sentence' markiert ___ die Lücke; 'answer' kann ein Text oder eine Liste erlaubter Antworten sein."
+  },
+  "topics": [
+    {
+      "id": "presente",
+      "title": "Presente de indicativo",
+      "subtitle": "Gegenwart: regelmäßige Verben + ser, estar, ir, tener, poder, querer",
+      "explanation": "Das Presente beschreibt, was jetzt oder regelmäßig passiert. Bei regelmäßigen Verben ersetzt du die Endung -ar, -er oder -ir durch die Personalendung (hablar → hablo, hablas, habla, hablamos, hablan). Ser, estar, ir, tener, poder und querer sind unregelmäßig; für „ihr“ und „Sie (Gruppe)“ gilt in Lateinamerika immer ustedes mit der 3. Person Plural.",
+      "table": {
+        "head": ["", "yo", "tú", "él / ella / usted", "nosotros", "ellos / ustedes"],
+        "rows": [
+          ["hablar", "hablo", "hablas", "habla", "hablamos", "hablan"],
+          ["comer", "como", "comes", "come", "comemos", "comen"],
+          ["vivir", "vivo", "vives", "vive", "vivimos", "viven"],
+          ["ser", "soy", "eres", "es", "somos", "son"],
+          ["estar", "estoy", "estás", "está", "estamos", "están"],
+          ["ir", "voy", "vas", "va", "vamos", "van"],
+          ["tener", "tengo", "tienes", "tiene", "tenemos", "tienen"],
+          ["poder", "puedo", "puedes", "puede", "podemos", "pueden"],
+          ["querer", "quiero", "quieres", "quiere", "queremos", "quieren"]
+        ]
+      },
+      "exercises": [
+        {"id": "pre01", "sentence": "Yo ___ su guía.", "hint": "ser · yo", "answer": "soy", "de": "Ich bin Ihr Reiseleiter."},
+        {"id": "pre02", "sentence": "El hotel ___ cerca de la plaza.", "hint": "estar · él", "answer": "está", "de": "Das Hotel ist in der Nähe des Platzes."},
+        {"id": "pre03", "sentence": "Hoy nosotros ___ al museo.", "hint": "ir · nosotros", "answer": "vamos", "de": "Heute gehen wir ins Museum."},
+        {"id": "pre04", "sentence": "¿Ustedes ___ alguna pregunta?", "hint": "tener · ustedes", "answer": "tienen", "de": "Haben Sie (alle) eine Frage?"},
+        {"id": "pre05", "sentence": "Ustedes ___ dejar las maletas en el autobús.", "hint": "poder · ustedes", "answer": "pueden", "de": "Sie können die Koffer im Bus lassen."},
+        {"id": "pre06", "sentence": "¿Usted ___ un café?", "hint": "querer · usted", "answer": "quiere", "de": "Möchten Sie einen Kaffee?"},
+        {"id": "pre07", "sentence": "El autobús ___ a las ocho.", "hint": "llegar · él", "answer": "llega", "de": "Der Bus kommt um acht Uhr an."},
+        {"id": "pre08", "sentence": "Nosotros ___ en el restaurante del hotel.", "hint": "comer · nosotros", "answer": "comemos", "de": "Wir essen im Hotelrestaurant."},
+        {"id": "pre09", "sentence": "Mi familia ___ en Alemania.", "hint": "vivir · ella", "answer": "vive", "de": "Meine Familie lebt in Deutschland."},
+        {"id": "pre10", "sentence": "¿Tú ___ español?", "hint": "hablar · tú", "answer": "hablas", "de": "Sprichst du Spanisch?"}
+      ]
+    },
+    {
+      "id": "imperativo_formal",
+      "title": "Imperativo formal",
+      "subtitle": "Höfliche Anweisungen: usted (Einzelperson) und ustedes (Gruppe)",
+      "explanation": "Mit dem formellen Imperativ gibst du höfliche Anweisungen – usted für eine Einzelperson, ustedes für die Gruppe. Du nimmst die yo-Form des Presente, streichst das -o und hängst die „entgegengesetzte“ Endung an: Verben auf -ar bekommen -e/-en (esperar → espere, esperen), Verben auf -er/-ir bekommen -a/-an (subir → suba, suban; tener → tengo → tenga, tengan). Unregelmäßig sind ir (vaya, vayan), ser (sea, sean) und estar (esté, estén); Pronomen werden angehängt (síganme), bei Verneinung stehen sie davor (no se separen).",
+      "table": {
+        "head": ["", "usted", "ustedes"],
+        "rows": [
+          ["esperar", "espere", "esperen"],
+          ["comer", "coma", "coman"],
+          ["subir", "suba", "suban"],
+          ["tener", "tenga", "tengan"],
+          ["venir", "venga", "vengan"],
+          ["seguir", "siga", "sigan"],
+          ["ir", "vaya", "vayan"],
+          ["ser", "sea", "sean"],
+          ["estar", "esté", "estén"]
+        ]
+      },
+      "exercises": [
+        {"id": "imp01", "sentence": "___ aquí, por favor.", "hint": "esperar · ustedes", "answer": "Esperen", "de": "Warten Sie bitte hier. (Gruppe)"},
+        {"id": "imp02", "sentence": "___ a la derecha.", "hint": "mirar · ustedes", "answer": "Miren", "de": "Schauen Sie nach rechts. (Gruppe)"},
+        {"id": "imp03", "sentence": "Señora, ___ al autobús, por favor.", "hint": "subir · usted", "answer": "suba", "de": "Steigen Sie bitte in den Bus. (eine Person)"},
+        {"id": "imp04", "sentence": "___ cuidado con los escalones.", "hint": "tener · ustedes", "answer": "Tengan", "de": "Achten Sie auf die Stufen. (Gruppe)"},
+        {"id": "imp05", "sentence": "Señor, ___ conmigo, por favor.", "hint": "venir · usted", "answer": "venga", "de": "Kommen Sie bitte mit mir. (eine Person)"},
+        {"id": "imp06", "sentence": "No ___ sus cosas en el autobús.", "hint": "dejar · ustedes", "answer": "dejen", "de": "Lassen Sie Ihre Sachen nicht im Bus. (Gruppe)"},
+        {"id": "imp07", "sentence": "___ por aquí, por favor.", "hint": "pasar · usted", "answer": "Pase", "de": "Bitte hier entlang. (eine Person)"},
+        {"id": "imp08", "sentence": "___ mucha agua, hace calor.", "hint": "beber · ustedes", "answer": "Beban", "de": "Trinken Sie viel Wasser, es ist heiß. (Gruppe)"},
+        {"id": "imp09", "sentence": "___ al mirador, la vista es increíble.", "hint": "ir · ustedes", "answer": "Vayan", "de": "Gehen Sie zum Aussichtspunkt, die Aussicht ist unglaublich. (Gruppe)"},
+        {"id": "imp10", "sentence": "___ puntuales, por favor.", "hint": "ser · ustedes", "answer": "Sean", "de": "Seien Sie bitte pünktlich. (Gruppe)"}
+      ]
+    },
+    {
+      "id": "futuro_proximo",
+      "title": "Futuro próximo",
+      "subtitle": "Nahe Zukunft: ir a + Infinitiv – für Ansagen zum Tagesprogramm",
+      "explanation": "Mit dem Futuro próximo sagst du, was gleich oder demnächst passiert – ideal für Ansagen zum Tagesprogramm. Du bildest es mit der konjugierten Form von ir, dann a und dem Infinitiv: Vamos a visitar la catedral. Das Hauptverb bleibt immer im Infinitiv, nur ir wird an die Person angepasst.",
+      "table": {
+        "head": ["", "ir", "a + Infinitiv"],
+        "rows": [
+          ["yo", "voy", "a explicar"],
+          ["tú", "vas", "a tomar fotos"],
+          ["él / ella / usted", "va", "a salir"],
+          ["nosotros", "vamos", "a visitar"],
+          ["ellos / ustedes", "van", "a tener"]
+        ]
+      },
+      "exercises": [
+        {"id": "fut01", "sentence": "Mañana nosotros ___ la catedral.", "hint": "visitar · nosotros", "answer": "vamos a visitar", "de": "Morgen besichtigen wir die Kathedrale."},
+        {"id": "fut02", "sentence": "El autobús ___ a las nueve.", "hint": "salir · él", "answer": "va a salir", "de": "Der Bus fährt um neun Uhr ab."},
+        {"id": "fut03", "sentence": "Yo les ___ la historia de la ciudad.", "hint": "explicar · yo", "answer": "voy a explicar", "de": "Ich werde Ihnen die Geschichte der Stadt erklären."},
+        {"id": "fut04", "sentence": "Ustedes ___ tiempo libre por la tarde.", "hint": "tener · ustedes", "answer": "van a tener", "de": "Sie werden am Nachmittag Freizeit haben."},
+        {"id": "fut05", "sentence": "Hoy nosotros ___ en un restaurante típico.", "hint": "almorzar · nosotros", "answer": "vamos a almorzar", "de": "Heute essen wir in einem typischen Restaurant zu Mittag."},
+        {"id": "fut06", "sentence": "¿Usted ___ la excursión?", "hint": "hacer · usted", "answer": "va a hacer", "de": "Werden Sie den Ausflug machen?"},
+        {"id": "fut07", "sentence": "Esta noche ___.", "hint": "llover · 3. Person", "answer": "va a llover", "de": "Heute Abend wird es regnen."},
+        {"id": "fut08", "sentence": "Los turistas ___ al hotel a las seis.", "hint": "regresar · ellos", "answer": "van a regresar", "de": "Die Touristen kehren um sechs Uhr ins Hotel zurück."},
+        {"id": "fut09", "sentence": "¿Tú ___ fotos?", "hint": "tomar · tú", "answer": "vas a tomar", "de": "Wirst du Fotos machen?"},
+        {"id": "fut10", "sentence": "Después del desayuno nosotros ___ al mercado.", "hint": "ir · nosotros", "answer": "vamos a ir", "de": "Nach dem Frühstück gehen wir zum Markt."}
+      ]
+    }
+  ]
+}

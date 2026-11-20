@@ -1,0 +1,17 @@
+{
+  "name": "Spanisch für Reiseleiter",
+  "short_name": "Español",
+  "description": "Privater Spanisch-Trainer für Reiseleiter: Vokabeln mit Spaced Repetition und Grammatik (lateinamerikanisches Spanisch).",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f4ef",
+  "theme_color": "#b4472e",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
